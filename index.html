@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--=============== swiper css ===============-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!--=============== REMIXICONS ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="./assets/css/main.css">
+
+    <title>Generador de Tarjetas</title>
+
+</head>
+
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="./index.html" class="nav__logo">Card Generator</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li>
+                        <a href="./index.html" class="nav__link">Inicio</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="nav__link">About</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="nav__link">Gifts</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="nav__link">Share</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="nav__link">Contact</a>
+                    </li>
+                </ul>
+
+                <!-- close button -->
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-large-line"></i>
+                </div>
+            </div>
+
+            <!-- toggle button -->
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-apps-2-line"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main>
+        <section class="hero-container">
+            <div class="hero-background">
+                <div class="gradient-overlay"></div>
+            </div>
+
+            <div class="content-container">
+                <div id="hero-content" class="hero-content hidden">
+                    <div class="icon-container">
+                        <i class="ri-file-edit-line icon"></i>
+                    </div>
+
+                    <h1 class="hero-title">Edita Tarjetas Fácil y Gratis</h1>
+
+                    <p class="hero-description">Tarjetas de alta calidad en minutos.</p>
+
+                    <a class="cta-button" aria-label="Empezar a crear tarjetas" href="#cards">
+                        Empieza Ahora
+                    </a>
+
+                    <div class="steps-container">
+                        <div class="step">
+                            <div class="step-circle">1</div>
+                            <span class="step-text">Edita</span>
+                        </div>
+                        <div class="step">
+                            <div class="step-circle">2</div>
+                            <span class="step-text">Descarga</span>
+                        </div>
+                        <div class="step">
+                            <div class="step-circle">3</div>
+                            <span class="step-text">Comparte</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="cards" class="card-section container">
+            <h2 class="card-slider__title">Tarjetas</h2>
+            <div class="card__container swiper">
+                <div class="card__content">
+                    <div class="swiper-wrapper">
+                        <!-- render cards -->
+
+
+                    </div>
+                </div>
+                <!-- navigation buttons -->
+                <div class="swiper-button-prev">
+                    <i class="ri-arrow-left-s-line"></i>
+                </div>
+
+                <div class="swiper-button-next">
+                    <i class="ri-arrow-right-s-line"></i>
+                </div>
+
+                <!-- pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer" id="footer">
+        <p>&copy; 2025 Card Generator. All rights reserved.</p>
+        <p>by Cristian Sandoval</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+    <script type="module" src="./assets/js/app.js"></script>
+    <!-- <script src="https://app.embed.im/confetti.js" defer></script> -->
+</body>
+
+</html>
