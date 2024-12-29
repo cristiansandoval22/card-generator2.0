@@ -448,3 +448,64 @@ section {
         right: -1rem;
     }
 }
+
+
+.card-section-alls{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    padding: 10rem  0 ;
+    justify-items: center;
+}
+.card__button-container{
+    margin-top: 1rem;
+    text-align: center; 
+}
+
+/* From Uiverse.io by cssbuttons-io */ 
+.card__button-alls {
+    align-items: center;
+    background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+    border: 0;
+    border-radius: 8px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: #ffffff;
+    display: inline-flex;
+    font-size: 18px;
+    justify-content: center;
+    line-height: 1em;
+    max-width: 100%;
+    min-width: 140px;
+    padding: 3px;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+ .card__button-alls:active,
+  .card__button-alls:hover {
+    outline: 0;
+  }
+  
+  .card__button-alls span {
+    background-color: rgb(5, 6, 45);
+    padding: 16px 24px;
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    transition: 300ms;
+  }
+  
+  .card__button-alls:hover span {
+    background: none;
+  }
+  
+  .card__button-alls:active {
+    transform: scale(0.9);
+  }
+  

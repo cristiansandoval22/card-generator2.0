@@ -10,7 +10,6 @@ export function showMenu() {
     if (navToggle) {
         navToggle.addEventListener('click', () => {
             navMenu.classList.add('show-menu');
-            console.log("esta funcionando");
         });
     }
 }
@@ -20,7 +19,6 @@ export function hideMenu() {
     if (navClose) {
         navClose.addEventListener('click', () => {
             navMenu.classList.remove('show-menu');
-            console.log("esta funcionando");
         });
     }
 }

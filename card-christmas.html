@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="./assets/css/page-generator.css">
     
 
-    <title>Generador de Tarjetas</title>
+    <title>Tarjeta de Navidad</title>
 
 </head>
 <body>
@@ -81,7 +81,9 @@
                 </div>
                 <div class="buttons">
                     <button class="form__button" type="button" id="descargarBtn">Descargar Tarjeta</button>
-                    <button class="form__button" type="button" id="resetBtn">hacer otra</button>
+                    <button class="form__button form__button--reset" type="button" id="resetBtn">
+                        <i class="ri-delete-bin-6-line"></i> 
+                   </button>
                 </div>
             </form>
         </section>
@@ -91,15 +93,13 @@
             <h2 class="preview__title">Vista previa</h2>
             <div class="preview__card" id="tarjeta">
                 <img class="preview__card-bg" src="./assets/images/images-cards/carta-de-navidad.png" alt="fondo de la tarjeta">
+                
                 <div class="preview__card-content">
                     <p class="preview__from" id="previewDe">De:</p>
                     <p class="preview__to" id="previewPara">Para:</p>
                     <p class="preview__message" id="previewMensaje" oninput="actualizarContador()">
                         Mensaje
                     </p>
-
-                    
-                    
                 </div>
 
             </div>
